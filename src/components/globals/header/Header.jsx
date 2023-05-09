@@ -64,7 +64,14 @@ const Header = () => {
                             <NavLink  className={isActive ? 'nav-Link active': 'nav-link'}  onClick={()=> setActive(!isActive)} to={item.url}>{item.text}</NavLink>
                         </li>
                     ))}
+                    <li>
+                    <div className="navBtn aux-navBtn">
+                      <Link className='linkBtn' to='/signin'>Sign In</Link>
+                      <Link className='linkBtn' to='/signup'>Sign Up</Link>
+                  </div>
+                    </li>
                 </ul>
+                
             </div>
 
             <div className="navBtn">

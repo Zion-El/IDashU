@@ -84,7 +84,9 @@ li a.active {
     font-size: 14px;
     color: grey;
 }
-
+.aux-navBtn{
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .header{
@@ -131,6 +133,7 @@ li a.active {
         width: 100%;
         /* max-width: 465px; */
         height: 3rem;
+        opacity: .98;
     }
     .toggle{
         display: block;
@@ -144,6 +147,7 @@ li a.active {
       .navBtn{
         display: none;
       }
+
       .nav .flex{
         display: none;
       }
@@ -157,17 +161,20 @@ li a.active {
         z-index: 100;
         opacity: 1;
       }
-
-      .small li{
-        width: 100%;
-        color: #fff;
-      }
       .small li a{
         font-size: 16px;
         text-align: center;
-        padding: 30px 0;
+        padding: 10px 0;
         background-color: #FF9D0B;
       }
-
+      .aux-navBtn{
+        display: block;
+      }
+      .aux-navBtn .linkBtn{
+        background-color: #535457;
+        color: #FEF9F6;
+        border-top: 1px solid #FEF9F6;
+      }
+      
 
 }
