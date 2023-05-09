@@ -6,10 +6,10 @@ import About from './components/About';
 import Contact from './components/contact/Contact';
 import Events from './components/Events';
 import Donate from './components/Donate';
-import SignUpForm from './components/sign pages/SignUp';
+import SignUpForm from './components/sign_pages/SignUp';
 import Donations from './components/Donations';
 import Footer from './components/globals/header/footer';
-import SignIn from './components/sign pages/SignIn'
+import SignIn from './components/sign_pages/SignIn'
 // import CookieConsent from "react-cookie-consent";
 
 
