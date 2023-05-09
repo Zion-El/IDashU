@@ -66,8 +66,8 @@ const Header = () => {
                     ))}
                     <li>
                     <div className="navBtn aux-navBtn">
-                      <Link className='linkBtn' to='/signin'>Sign In</Link>
-                      <Link className='linkBtn' to='/signup'>Sign Up</Link>
+                      <Link onClick={toggleVisibility} className='linkBtn' to='/signin'>Sign In</Link>
+                      <Link onClick={toggleVisibility} className='linkBtn' to='/signup'>Sign Up</Link>
                   </div>
                     </li>
                 </ul>

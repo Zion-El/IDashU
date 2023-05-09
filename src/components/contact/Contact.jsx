@@ -23,7 +23,7 @@ const Contact = () => {
         }
 
   return (
-    <div className='contact container'>
+    <div className='cont contact container'>
         <div className="banner">
             <div className='hero-title'>
                 <h2>Feel proud be the part of revolution in <span>Africa</span></h2>
@@ -47,7 +47,7 @@ const Contact = () => {
                     <textarea name="" id="" value={message} onChange={e => setMessage(e.target.value)} cols="10" rows="10"></textarea>
                 </div>
                 <div>
-                    <input className='donateBtn' type="submit" value='Submit'/>
+                    <input className='donateBtn' type="submit" value='Sign Up'/>
                 </div>
             </form>
         </div>

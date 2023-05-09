@@ -3,7 +3,7 @@ import Globe from './globe/globe'
 
 const Events = () => {
   return (
-    <div>
+    <div className='events'>
         <Globe/>
     </div>
   )

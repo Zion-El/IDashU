@@ -373,7 +373,9 @@ span{
   line-height: 16px;
   text-align: center;
 }
-
+.events{
+  height: 34rem;
+}
 
 
 }

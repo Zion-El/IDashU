@@ -86,6 +86,13 @@ textarea{
     .contact{
         flex-direction: column;
         padding: 0 5%;
+        height: 45rem;
+    }
+    .cont.contact{
+        height: 60rem;
+    }
+    .signIN.contact{
+        height: 34rem;
     }
     .banner{
         padding: 10%;
