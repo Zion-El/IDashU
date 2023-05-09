@@ -1,0 +1,167 @@
+.help{
+    height: 100vh;
+    width: 100%;
+    background-color: #FEF9F6;
+    padding: 7% 7% 5% 7%;
+}
+.help-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.help-desc h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #111214;
+}
+.help-desc p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #535457;
+}
+
+.H-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20px;
+    gap: 10px;
+    background: rgba(255, 217, 249, 0.19);
+    border: 1.2px solid #FFFFFF;
+    border-radius: 12px;
+}
+
+.H-card img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+.H-card h3{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    color: #000000;
+}
+.H-card p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #535457;
+}
+.target, .donator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.donator img{
+    width: 100px;
+    height: 35px;
+}
+
+.donator .donateBtn{
+    padding: 10px 12px;
+    gap: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+  } 
+  .rai{
+    color: #097659;
+  }
+
+
+  @media screen and (max-width:768px) {
+    .help{
+        height: 90vh;
+        padding: 7% 7% 5% 7%;
+    }
+    .help-desc h3{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .help-desc p{
+        font-size: 14px;
+        line-height: 32px;
+    }
+    
+    .H-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 10px;
+        background: rgba(255, 217, 249, 0.19);
+        border: 1.2px solid #FFFFFF;
+        border-radius: 12px;
+    }
+    
+    .H-card img{
+        width: 180px;
+        height: 120px;
+        border-radius: 8px;
+    }
+
+    .H-card h3{
+        font-size: 14px;
+    }
+    .H-card p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .target, .donator{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .donator img{
+        width: 60px;
+        height: 25px;
+    }
+    
+    .donator .donateBtn{
+        padding: 8px 10px;
+        gap: 5px;
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+      } 
+      .rai{
+        color: #097659;
+      }
+  }
+  @media screen and (max-width:465px) {
+    .help .grid3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .9rem;
+        overflow-x: scroll;
+      }
+    .help{
+        height: 33rem;
+        padding: 3rem 7% 5% 7%;
+    }
+    .help-desc h3{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .help-desc p{
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+    
+  }

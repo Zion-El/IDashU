@@ -1,0 +1,99 @@
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+form{
+    padding: 0 10%;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.banner, .form{
+    width: 50%;
+}
+.contact-info label{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(9, 118, 89, 0.5);
+}
+
+.contact-info input, textarea{
+    padding: 12px 10px ;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    box-shadow: 5px 10px 15px #888888;
+    /* border: 1px solid #FF9D0B; */
+    border: none;
+}
+textarea{
+    resize: none;
+    padding: 12px 10px ;
+    border-radius: 12px;
+}
+.form .donateBtn{
+    padding: 10px 12px;
+    gap: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+  } 
+
+  @media screen and (max-width: 768px) {
+    .contact{
+        padding: 10% 5% 0 5%;
+        height: 90vh;
+        align-items: flex-start;
+    }
+    .banner{
+        padding: 3%;
+    }
+    .banner p{
+        font-size: 12px;
+    }
+    form{
+        padding: 0;
+    }
+    .banner, .form{
+        width: 100%;
+    }
+    .form form{
+        gap: 20px; 
+    }
+    .contact-info label{
+        font-size: 14px;
+    }
+    .contact-info input{
+        font-size: 12px;
+    }
+    textarea{
+        height: 100px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .contact{
+        flex-direction: column;
+        padding: 0;
+    }
+    .banner{
+        padding: 10%;
+    }
+    .banner, .form{
+        width: 100%;
+    }
+    .form form{
+        gap: 20px; 
+    }
+  }
