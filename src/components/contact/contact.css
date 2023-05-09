@@ -85,7 +85,7 @@ textarea{
   @media screen and (max-width: 425px) {
     .contact{
         flex-direction: column;
-        padding: 0;
+        padding: 0 5%;
     }
     .banner{
         padding: 10%;
@@ -95,5 +95,6 @@ textarea{
     }
     .form form{
         gap: 20px; 
+        padding: 0 5%;
     }
   }

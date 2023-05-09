@@ -8,6 +8,7 @@ import Events from './components/Events';
 import Donate from './components/Donate';
 import SignUpForm from './components/sign pages/SignUp';
 import Donations from './components/Donations';
+import Footer from './components/globals/header/footer';
 // import CookieConsent from "react-cookie-consent";
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/signup' element={<SignUpForm/>}/>
         <Route path='/donation' element={<Donations/>}/>
       </Routes>
+      <Footer/>
       {/* <CookieConsent debug={true}>This site uses cookies.</CookieConsent> */}
     </div>
   );

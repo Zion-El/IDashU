@@ -71,6 +71,19 @@ li a.active {
     border-radius: 18px;
     color: white;
 }
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 9999;
+    opacity: .9;
+}
+.footer p{
+    font-size: 14px;
+    color: grey;
+}
 
 
 @media screen and (max-width: 768px) {

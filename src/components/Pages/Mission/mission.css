@@ -80,13 +80,13 @@
     background: #590BFF;
 }
 
-.desc{
+.tab .desc{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
-.desc h3{
+.tab .desc h3{
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
@@ -240,7 +240,7 @@
 .ms-tabs .desc{
     gap: 0px;
 }
-.desc h3{
+.tab .desc h3{
     font-size: 12px;
 }
 .desc p{
