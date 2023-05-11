@@ -55,13 +55,16 @@ const Header = () => {
   return (
     <div className='header container'>
             <div className="logo">
+              <Link to='/'>
                 <img src={Logo} alt="logo" />
+              </Link>
+                
             </div>
             <div className='nav' style={{ display: isVisible ? 'block' : 'none'}}> 
                 <ul className={clicked ? 'small' : 'flex'}>
                     {nav.map((item, index)=> (
                         <li onClick={toggleVisibility} key={index}>
-                            <NavLink  className={isActive ? 'nav-Link active': 'nav-link'}  onClick={()=> setActive(!isActive)} to={item.url}>{item.text}</NavLink>
+                            <NavLink  className={isActive ? 'nav-Link active': 'nav-link'}  onClick={()=> setActive(isActive)} to={item.url}>{item.text}</NavLink>
                         </li>
                     ))}
                     <li>
@@ -81,7 +84,7 @@ const Header = () => {
             <div className="toggle">
               <button onClick={() => 
                 setClicked(!clicked)}>
-                  <i className={!clicked ? 'fa fa-bars' : 'fa fa-times'}></i>
+                  <i className={!clicked ? 'fa fa-1x fa-bars' : 'fa fa-1x fa-times'}></i>
               </button>
           </div>
     </div>

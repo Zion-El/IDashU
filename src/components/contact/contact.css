@@ -82,14 +82,14 @@ textarea{
         height: 100px;
     }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     .contact{
         flex-direction: column;
         padding: 0 5%;
         height: 45rem;
     }
     .cont.contact{
-        height: 60rem;
+        height: 45rem;
     }
     .signIN.contact{
         height: 34rem;

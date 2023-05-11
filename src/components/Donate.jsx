@@ -11,7 +11,7 @@ const Donate = () => {
     const [email, setEmail] = useState("")
     const [fullname, setName] = useState("")
     const [amount, setAmount] = useState("")
-  
+
     const componentProps = {
         email,
         amount,
@@ -47,7 +47,7 @@ const Donate = () => {
                 </div>
                 <div className='contact-info'>
                     <label>Amount</label>
-                    <input type="text" onChange={e => setAmount(e.target.value)} placeholder='How much are you donating?'/>
+                    <input type="text" onChange={e => setAmount(e.target.value * 100)} placeholder='How much are you donating?'/>
                 </div>
                 <div>
                     <PaystackButton className="donateBtn" {...componentProps} />

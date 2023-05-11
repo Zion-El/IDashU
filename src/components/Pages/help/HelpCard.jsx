@@ -48,7 +48,13 @@ const HelpCard = () => {
                     <p>Goals: <b>{item.goal}</b></p>
                     <p>Raised: <b className='rai'>{item.raised}</b></p>
                 </div>
-                <div></div>
+                <div className='progress'>
+                    <div className='progress-bar'>
+                        <div className="filled"></div>
+                        <div className='ufilled'></div>
+                    </div>
+                    <p>45%</p>
+                </div>
                 <div className='donator'>
                     <img src={item.donator} alt="" />
                     <div className='donateBtn2'>

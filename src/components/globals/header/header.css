@@ -43,7 +43,6 @@ li a:hover{
 }
 
 li a.active {
-    padding: 5px;
     border-bottom: 3px solid #FF9D0B;
 }
 
@@ -128,7 +127,7 @@ li a.active {
     }
 }
 
-@media screen and (max-width:465px) {
+@media screen and (max-width:768px) {
     .header{
         width: 100%;
         /* max-width: 465px; */

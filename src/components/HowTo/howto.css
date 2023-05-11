@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width:465px) {
+@media screen and (max-width:768px) {
     .howTo{
         height: 15rem;
         width: 100%;
