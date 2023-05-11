@@ -4,14 +4,15 @@ import '../components/contact/contact.css'
 import { PaystackButton } from 'react-paystack'
 
 
-
 const Donate = () => {
 
-    const publicKey = "pk_test_b867401df9e1cfc2365ee62ffcd0889c5d73368c"
+    const publicKey = 'pk_test_b867401df9e1cfc2365ee62ffcd0889c5d73368c'
     const [email, setEmail] = useState("")
     const [fullname, setName] = useState("")
     const [amount, setAmount] = useState("")
 
+
+    console.log(process.env.PAYSTACK_KEY);
     const componentProps = {
         email,
         amount,
