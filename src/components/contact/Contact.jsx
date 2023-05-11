@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './contact.css'
-// This is the contact form 
+// This is the contact page
 
 
 const Contact = () => {
