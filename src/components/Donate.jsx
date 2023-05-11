@@ -26,6 +26,8 @@ const Donate = () => {
         onClose: () => alert("Wait! You need to do this now!!!"),
       }
 
+      
+
   return (
     <div className='contact container'>
         <div className="banner">
@@ -40,15 +42,15 @@ const Donate = () => {
             <form onSubmit={e => e.preventDefault()}>
                 <div className='contact-info'>
                     <label>Full Name</label>
-                    <input type="text" value={fullname} onChange={e =>setName(e.target.value)} placeholder='Enter your fullname' />
+                    <input required type="text" value={fullname} onChange={e =>setName(e.target.value)} placeholder='Enter your fullname' />
                 </div>
                 <div className='contact-info'>
                     <label>Email</label>
-                    <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder='Enter your email' />
+                    <input required type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder='Enter your email' />
                 </div>
                 <div className='contact-info'>
                     <label>Amount</label>
-                    <input type="text" onChange={e => setAmount(e.target.value * 100)} placeholder='How much are you donating?'/>
+                    <input required type="number" onChange={e => setAmount(e.target.value * 100)} placeholder='How much are you donating?'/>
                 </div>
                 <div>
                     <PaystackButton className="donateBtn" {...componentProps} />
