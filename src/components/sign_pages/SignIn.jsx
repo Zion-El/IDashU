@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 // this is the signIn in page
 
 const SignIn = () => {
-  const [fullname, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formData = { fullname, email};
+    const formData = { email, password};
     fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -31,12 +31,12 @@ return (
   <div className="form">
       <form action="" onSubmit={handleSubmit}>
           <div className='contact-info'>
-              <label>Full Name</label>
-              <input type="text" value={fullname} onChange={e =>setName(e.target.value)} placeholder='Enter your fullname' />
+              <label>Email</label>
+              <input required type="email" value={fullname} onChange={e =>setEmail(e.target.value)} placeholder='Enter your fullname' />
           </div>
           <div className='contact-info'>
-              <label>Email</label>
-              <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder='Enter your email' />
+              <label>Password</label>
+              <input required type="password" value={email} onChange={e => setPassword(e.target.value)} placeholder='Enter your email' />
           </div>
           <div>
               <input className='donateBtn' type="submit" value='Sign In'/>
